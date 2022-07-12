@@ -1,0 +1,35 @@
+.Recharts {
+  margin-top: 10px;
+  .bottomRow {
+    display: flex;
+    align-items: center;
+    gap: 6px;
+    .iconFirst,
+    .iconSecond {
+      border-radius: 50%;
+      background-color: aquamarine;
+      width: 8px;
+      height: 8px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      .iconFirstInner,
+      .iconSecondInner {
+        border-radius: 50%;
+        width: 4px;
+        height: 4px;
+        background: var(--primary-color);
+      }
+    }
+    .iconSecondInner {
+      background-color: rgb(14, 58, 145);
+    }
+    .iconSecond {
+      background: rgb(155, 171, 202);
+    }
+
+    p {
+      font-size: 12px;
+    }
+  }
+}

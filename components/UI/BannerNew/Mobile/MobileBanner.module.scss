@@ -1,0 +1,229 @@
+.root {
+  box-shadow: rgba(79, 245, 203, 0.02) 0px 1px 3px 0px,
+    rgba(27, 31, 35, 0.15) 0px 0px 0px 1px;
+  border-radius: 22px;
+  overflow: hidden;
+  ::-webkit-scrollbar {
+    display: none;
+  }
+
+  padding-top: 0;
+  .Mobile {
+    padding: 24px 12px;
+    position: relative;
+    background-color: rgba(255, 255, 255, 0.9);
+
+    width: 280px;
+    height: 606px;
+    border: 10px solid rgba(255, 255, 255, 0.3);
+    border-radius: 26px;
+    .firstPage {
+      .title {
+        font-size: 18px;
+        font-weight: bold;
+        color: #000;
+        line-height: 22px;
+      }
+      .content {
+        margin-top: 10px;
+        font-size: 14px;
+        color: #000;
+        line-height: 18px;
+      }
+      .wrapperAims {
+        position: relative;
+        margin-top: 30px;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 15px;
+        .aimItem {
+          box-shadow: rgba(79, 245, 203, 0.02) 0px 1px 3px 0px,
+            rgba(27, 31, 35, 0.15) 0px 0px 0px 1px;
+          position: relative;
+          height: 100vh;
+          display: flex;
+          flex-direction: column;
+          justify-content: space-between;
+          cursor: pointer;
+          border-radius: 8px;
+          padding: 8px;
+          width: 110px;
+          height: 70px;
+          background: #fff;
+          .aimTitle {
+            line-height: 12px;
+            font-size: 11px;
+            font-weight: 500;
+          }
+          .iconCheck {
+            color: var(--primary-color);
+            position: absolute;
+            top: 8px;
+            right: 8px;
+            width: 18px;
+          }
+        }
+
+        .aimItemCheked {
+          border: 0px solid #fff;
+          box-shadow: rgba(0, 0, 0, 0.12) 0px 1px 3px,
+            rgba(0, 0, 0, 0.24) 0px 1px 2px;
+        }
+      }
+      .btn {
+        background: rgba(255, 255, 255, 0.3) !important;
+        cursor: pointer;
+        position: absolute;
+        bottom: 10px;
+        width: calc(100% - 24px);
+        height: 42px;
+        background: var(--primary-color);
+        border-radius: 12px;
+        color: gray;
+        border-color: lightgray;
+        font-size: 16px;
+        font-weight: bold;
+        line-height: 30px;
+      }
+      .activeBtn {
+        background: #01cab0 !important;
+        border-color: #01cab0;
+        color: #fff;
+      }
+    }
+    .secondPage {
+      height: 100%;
+      max-height: 100vh;
+      position: relative;
+      overflow-y: scroll;
+      .header {
+        display: flex;
+        // gap: 50px;
+        z-index: 100000;
+        background: #fff;
+        height: 30px;
+        position: fixed;
+        left: 18px;
+        right: 0;
+        top: 28px;
+
+        .back {
+          color: #01cab0;
+          cursor: pointer;
+        }
+        .headerTitle {
+          margin-left: 20px;
+          font-size: 14px;
+          font-weight: 400;
+          color: #000;
+        }
+      }
+      .scrollAims {
+        margin-top: 40px;
+        overflow-x: scroll;
+        position: relative;
+        display: flex;
+        gap: 15px;
+        .scrollItem {
+          cursor: pointer;
+          width: 35px;
+          height: 35px;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          padding: 10px;
+          border-radius: 50%;
+          background: rgb(223, 221, 221);
+        }
+        .checkedScrollItem {
+          border: 1px solid #01cab0;
+        }
+      }
+      .row {
+        margin-top: 20px;
+        .currency {
+          color: blue;
+          width: 100%;
+          height: 32px;
+          border: none;
+          outline: none;
+          border-bottom: 1px solid lightgray;
+          padding: 0;
+          background: transparent;
+          color: #000;
+          &:focus {
+            border-bottom: 1px solid #00cbb1;
+          }
+        }
+        .labelInput {
+          font-size: 12px;
+          font-weight: 400;
+          color: gray;
+        }
+      }
+      .monthlyInvest {
+        margin: 20px 0;
+        padding: 8px 0;
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        background-color: whitesmoke;
+        gap: 8px;
+        border-radius: 8px;
+        .labelInput {
+          font-size: 12px;
+          font-weight: 500;
+          color: gray;
+        }
+        .monthlyInvestInput {
+          font-size: 16px;
+          font-weight: 500;
+          width: 100%;
+          border: none;
+          text-align: center;
+          outline: none;
+          background: transparent;
+        }
+      }
+      .recharts {
+        .monthFinancial {
+          margin-bottom: 15px;
+          display: flex;
+          justify-content: space-between;
+          .monthTitle {
+            font-size: 12px;
+          }
+          .soumFinance {
+            font-size: 12px;
+            font-weight: 500;
+          }
+        }
+      }
+      .deadlineMonths {
+        margin-top: 10px;
+        display: flex;
+        gap: 10px;
+        .month {
+          cursor: pointer;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          width: 30px;
+          height: 30px;
+          padding: 10px;
+          border-radius: 10px;
+          background: lightgray;
+          color: rgb(26, 21, 21);
+          font-weight: 400;
+          font-size: 12px;
+        }
+        .checkedMonth {
+          color: #fff;
+          background: var(--primary-color);
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,207 @@
+.root {
+  position: relative;
+  background: #f8f8f8;
+  padding: 194px 0 40px;
+
+  .box {
+    display: flex;
+    width: 100%;
+
+    .list {
+      display: flex;
+      width: 100%;
+      border-bottom: 1px solid #e6e6e6;
+      justify-content: space-between;
+      padding-bottom: 25px;
+      .rightText {
+        font-size: 14px;
+        line-height: 20px;
+        width: 35%;
+        height: 100%;
+        p {
+          padding-top: 30px;
+        }
+        @media (max-width: 576px) {
+          width: 100%;
+          p {
+            padding-top: 0;
+            margin-bottom: 20px;
+          }
+        }
+      }
+      .hasChild {
+        display: flex;
+        flex-direction: column;
+
+        @media (max-width: 576px) {
+          margin-bottom: 20px;
+          margin-right: 0;
+        }
+        &:last-child {
+          margin-right: 0;
+        }
+        .item {
+          .itemList {
+            line-height: 22px;
+            font-size: 18px;
+            font-weight: 600;
+            color: rgba(0, 0, 0, 0.7);
+          }
+        }
+        .item:hover a {
+          color: #000;
+        }
+        .childItem {
+          margin-top: 10px;
+          display: flex;
+          flex-direction: column;
+          @media (max-width: 576px) {
+            margin-top: 10px;
+          }
+          a {
+            &:hover {
+              text-decoration: underline;
+            }
+            margin-bottom: 5px;
+          }
+          .childItemList {
+            color: #000000;
+            font-size: 14px;
+            line-height: 17px;
+          }
+        }
+      }
+    }
+  }
+
+  .secondBox {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    padding: 23px 0 30px;
+    border-bottom: 1px solid #e6e6e6;
+    .title {
+      font-size: 18px;
+      font-weight: 600;
+      line-height: 29px;
+      letter-spacing: 0.4%;
+      text-transform: uppercase;
+    }
+    .content {
+      font-size: 16px;
+      letter-spacing: 0.4%;
+      line-height: 25px;
+      font-weight: 400;
+      color: #6a6a6a;
+      margin-top: 18px;
+      a {
+        color: var(--primary-color);
+      }
+    }
+  }
+  .textBox {
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 40px;
+    .udevs:hover {
+      color: #878787 !important;
+      text-decoration: underline;
+    }
+    .copyright {
+      font-size: 16px;
+      line-height: 17px;
+      color: #000000;
+      font-weight: 400;
+      //margin-bottom: 10px;
+    }
+    .row {
+      display: flex;
+      align-items: center;
+      position: absolute;
+      top: -100px;
+      right: 0;
+      .icon {
+        margin-left: 12px;
+        a {
+          display: block;
+          color: #000;
+        }
+        & a:hover {
+          color: #fff;
+        }
+      }
+    }
+  }
+}
+@media (max-width: 576px) {
+  .root {
+    clip-path: polygon(0 1%, 100% 0, 100% 100%, 0 100%) !important;
+    padding: 60px 0 76px;
+    .box {
+      .list {
+        flex-direction: column;
+        padding-bottom: 0;
+        .hasChild {
+          margin-bottom: 30px;
+        }
+        .itemList {
+          font-size: 22px !important;
+          color: #000 !important;
+          line-height: 26px !important;
+        }
+        .childItem {
+          margin-top: 0 !important;
+          .childItemList {
+            color: #000 !important;
+            margin-top: 16px;
+            margin-bottom: 0 !important;
+          }
+        }
+      }
+    }
+    .secondBox {
+      width: 100%;
+      padding: 30px 0;
+      .title {
+        font-size: 20px;
+        line-height: 29px;
+        color: #000000;
+      }
+      .content {
+        margin-top: 12px;
+        font-size: 18px;
+        line-height: 29px;
+        color: #8b959e;
+      }
+    }
+    .textBox {
+      justify-content: center;
+      align-items: center;
+      flex-direction: column-reverse;
+      text-align: center;
+      margin-top: 19px;
+      .udevs:hover {
+        color: #878787 !important;
+      }
+      .copyright {
+        font-size: 14px;
+        line-height: 17px;
+      }
+
+      .row {
+        margin-bottom: 32px;
+        position: static;
+        top: inherit;
+        right: inherit;
+        .icon {
+          padding-left: 12px;
+          & a:hover {
+            color: #fff;
+          }
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,144 @@
+.root {
+  position: relative;
+  background: linear-gradient(0deg, #f2f2f8, #f2f2f8), rgba(4, 4, 21, 0.03);
+  padding: 74px 0 40px;
+
+  .firstBox {
+    display: flex;
+    width: 100%;
+    gap: 100px;
+    padding-bottom: 50px;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.12);
+
+    .firstBoxitem {
+      display: flex;
+      flex-direction: column;
+      .itemTitle {
+        margin-bottom: 20px;
+        font-weight: 600;
+        font-size: 24px;
+        line-height: 32px;
+      }
+      .itemList {
+        display: flex;
+        flex-direction: column;
+        li {
+          font-size: 16px;
+          line-height: 24px;
+          margin-bottom: 8px;
+          opacity: 0.6;
+        }
+      }
+    }
+  }
+  .secondBox {
+    display: flex;
+    width: 100%;
+    border-bottom: 1px solid #e6e6e6;
+    .title {
+      font-size: 18px;
+      font-weight: 600;
+      line-height: 29px;
+      letter-spacing: 0.4%;
+    }
+    .content {
+      font-size: 16px;
+      letter-spacing: 0.4%;
+      line-height: 25px;
+      font-weight: 400;
+      color: #6a6a6a;
+      margin-top: 18px;
+      a {
+        color: var(--primary-color);
+      }
+    }
+  }
+  .privacy {
+    margin-top: 30px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    .left {
+      display: flex;
+      gap: 25px;
+      align-items: center;
+      .copyright {
+        font-size: 16px;
+        line-height: 17px;
+        color: #000000;
+        font-weight: 400;
+      }
+    }
+    .social {
+      display: flex;
+      align-items: center;
+      justify-content: space-around;
+      gap: 18px;
+    }
+  }
+}
+
+@media (max-width: 992px) {
+  .root {
+    .firstBox {
+      gap: 30px;
+      flex-direction: column;
+      .firstBoxitem {
+        margin-bottom: 20px;
+      }
+    }
+  }
+}
+
+@media (max-width: 576px) {
+  .root {
+    padding: 60px 0 76px;
+    .firstBox {
+      .firstBoxitem {
+        .itemTitle {
+          font-weight: 600;
+          font-size: 20px;
+          line-height: 32px;
+        }
+        .itemList {
+          li {
+            font-weight: 500;
+            font-size: 14px;
+            line-height: 24px;
+          }
+        }
+      }
+    }
+
+    .secondBox {
+      width: 100%;
+      padding: 30px 0;
+      .title {
+        font-size: 20px;
+        line-height: 29px;
+        color: #000000;
+      }
+      .content {
+        margin-top: 12px;
+        font-size: 18px;
+        line-height: 29px;
+        color: #8b959e;
+      }
+    }
+    .privacy {
+      gap: 20px;
+      flex-direction: column-reverse;
+      .left {
+        .copyright {
+          font-size: 14px;
+          line-height: 24px;
+          color: #040415;
+          opacity: 0.6;
+        }
+      }
+      .logo {
+        display: none;
+      }
+    }
+  }
+}

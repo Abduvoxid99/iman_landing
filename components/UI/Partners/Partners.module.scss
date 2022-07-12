@@ -1,0 +1,166 @@
+.body {
+  background: linear-gradient(139.67deg, #08dcc8 16.36%, #00cdcc 98.61%);
+  clip-path: polygon(0 13%, 100% 0, 100% 87%, 0 100%);
+  position: relative;
+  padding: 174px 0;
+  .container {
+    position: relative;
+    .title {
+      font-size: 40px;
+      font-weight: 600;
+      line-height: 50px;
+      text-align: center;
+      color: #fff;
+      text-transform: uppercase;
+      //font-family: var(--header-text);
+      margin-bottom: 40px;
+      br {
+        display: none;
+      }
+    }
+
+    .card {
+      border-radius: 16px;
+      background: rgba(255, 255, 255, 0.01);
+      transition: all 0.3s ease;
+      &:hover {
+        background: #fff;
+        .content,
+        .contentTitle {
+          color: #000 !important;
+        }
+      }
+      .img {
+        min-height: 200px;
+        img {
+          width: 100%;
+          border-radius: 16px;
+          object-fit: cover;
+        }
+      }
+    }
+    .rowSecond {
+      display: flex;
+      justify-content: center;
+
+      padding: 0 10px;
+
+      .cardRow {
+        display: flex;
+        flex-direction: column;
+        padding: 12px;
+        //background: linear-gradient(152.16deg, #06f0da 12.31%, #00cdcc 74.22%);
+        .contentTitle {
+          font-weight: 600;
+          font-size: 21px;
+          line-height: 27px;
+          //font-family: var(--body-text);
+          color: #fff;
+          // height: 58px;
+          // overflow: hidden;
+          text-transform: uppercase;
+        }
+        .content {
+          padding-top: 12px;
+          font-size: 18px;
+          font-weight: 400;
+          line-height: 25px;
+          //font-family: var(--body-text);
+          overflow: hidden;
+          text-overflow: ellipsis;
+          text-transform: capitalize;
+          display: -webkit-box;
+          -webkit-line-clamp: 8;
+          -webkit-box-orient: vertical;
+          height: 155px;
+          color: #fff;
+        }
+      }
+    }
+    .button {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      .btn {
+        border-radius: 4px;
+        border: 1.4px solid #01cab0;
+        color: #01cab0;
+        text-transform: initial;
+        font-size: 18px;
+        line-height: 22px;
+        font-weight: 600;
+        padding: 12px 65px;
+        //font-family: var(--body-text);
+        margin-top: 32px;
+        &:hover {
+          color: #fff;
+          background-color: #01cab0;
+          border-color: #01cab0;
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: 800px) {
+  .body {
+    clip-path: polygon(0 5%, 100% 0, 100% 95%, 0 100%);
+    padding: 80px 0 154px;
+    .title {
+      font-size: 28px !important;
+      line-height: 34px !important;
+    }
+    .container {
+      .row {
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        padding-top: 32px;
+      }
+      .rowSecond {
+        flex-direction: column;
+        //padding: 0 16px;
+        .cardRow {
+          display: flex;
+          flex-direction: column;
+          padding-bottom: 40px;
+          //background: #f5f5f5;
+          height: 100%;
+          .contentTitle {
+            font-weight: 600;
+            font-size: 24px;
+            line-height: 29px;
+          }
+          .content {
+            padding-top: 12px;
+            font-size: 16px;
+            font-weight: 400;
+            line-height: 25px;
+          }
+        }
+        .button {
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          .btn {
+            border-radius: 4px;
+            border: 1.4px solid #01cab0;
+            color: #01cab0;
+            text-transform: initial;
+            font-size: 14px;
+            line-height: 22px;
+            font-weight: 500;
+            padding: 12px 65px;
+            margin-top: 0;
+          }
+        }
+      }
+    }
+    .backArrow {
+      display: none;
+    }
+    .nextArrow {
+      display: none;
+    }
+  }
+}

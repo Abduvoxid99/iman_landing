@@ -1,0 +1,57 @@
+.root {
+  position: relative;
+  padding: 100px 0;
+
+  .container {
+    h2 {
+      margin-bottom: 72px;
+    }
+    .row {
+      position: relative;
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      justify-content: space-evenly;
+      gap: 40px;
+      .card {
+        max-width: 575px;
+        background: linear-gradient(0deg, #f2f2f8, #f2f2f8),
+          rgba(4, 4, 21, 0.03);
+        border-radius: 30px;
+        padding: 40px;
+        .title {
+          font-weight: 600;
+          font-size: 24px;
+          line-height: 32px;
+          color: #01cab0;
+          margin-bottom: 20px;
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: 768px) {
+  .root {
+    position: relative;
+    padding: 60px 0;
+
+    .container {
+      h2 {
+        margin-bottom: 36px;
+      }
+      .row {
+        grid-template-columns: 1fr;
+        justify-content: center;
+        gap: 20px;
+        .card {
+          border-radius: 15px;
+          padding: 15px;
+          .title {
+            font-size: 16px;
+            line-height: 24px;
+          }
+        }
+      }
+    }
+  }
+}

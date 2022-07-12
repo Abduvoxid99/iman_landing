@@ -1,0 +1,205 @@
+.root {
+  position: relative;
+  margin-top: 44px;
+  .container {
+    .row {
+      height: 580px;
+      position: relative;
+      border-radius: 50px;
+      background: linear-gradient(227.67deg, #ded9ff -16.22%, #dcfff9 100%),
+        #f2f2f8;
+      padding: 75px 65px;
+      .left {
+        .wrapperLeftContent {
+          margin-bottom: 150px;
+          height: 400px;
+          .title {
+            font-weight: 500;
+            font-size: 24px;
+            line-height: 30px;
+            color: #01cab0;
+          }
+          .subtitle {
+            margin-top: 10px;
+            font-style: normal;
+            font-weight: 700;
+            font-size: 60px;
+            line-height: 64px;
+            color: #040415;
+          }
+          .description {
+            margin-top: 30px;
+            font-weight: 500;
+            font-size: 24px;
+            line-height: 32px;
+            color: #040415;
+          }
+        }
+      }
+      .statistic {
+        display: flex;
+        gap: 20px;
+        justify-content: space-around;
+        width: 100%;
+        .statisticCard {
+          .wrapperContent {
+            display: flex;
+            .statisticTitle {
+              white-space: nowrap;
+              font-weight: 400;
+              font-size: 42px;
+              line-height: 48px;
+            }
+            .statisticDescription {
+              margin-left: 15px;
+              font-weight: 500;
+              font-size: 18px;
+              line-height: 24px;
+            }
+          }
+        }
+      }
+      .right {
+        position: relative;
+        .wrapperImg {
+          position: absolute;
+          left: 50%;
+          transform: translate(-50%, 0);
+          img {
+            cursor: pointer;
+            color: #fff;
+            width: 350px;
+            // height: 700.29px;
+            height: auto;
+          }
+        }
+      }
+      .arrowHandle {
+        display: flex;
+        flex-direction: column;
+        position: absolute;
+        right: -80px;
+        bottom: -70px;
+        .text {
+          transform: translateY(-30px);
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: 960px) {
+  .root {
+    margin-bottom: 560px;
+
+    .container {
+      .row {
+        height: 850px;
+        .left {
+          .wrapperLeftContent {
+            margin-bottom: 0;
+            height: auto;
+            .title {
+            }
+            .subtitle {
+            }
+            .description {
+            }
+          }
+        }
+        .statistic {
+          margin-top: 0;
+          margin-left: 10px;
+          width: 100%;
+          display: flex;
+          padding: 30px 0;
+          justify-content: flex-start;
+          gap: 20px;
+          .statisticCard {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            .wrapperContent {
+              flex-direction: column;
+              .statisticTitle {
+                font-weight: 400;
+                font-size: 24px;
+                line-height: 30px;
+                color: #040415;
+              }
+              .statisticDescription {
+                margin: 0;
+                font-size: 13px;
+                line-height: 20px;
+                color: #040415;
+              }
+            }
+          }
+        }
+        .right {
+          .wrapperImg {
+            img {
+            }
+          }
+        }
+        .arrowHandle {
+          display: none;
+          .text {
+          }
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: 800px) {
+  .root {
+    margin-top: 0;
+    padding-top: 0;
+    .container {
+      padding: 0;
+      .row {
+        margin-bottom: 100px;
+        border-radius: 0;
+      }
+    }
+  }
+}
+
+@media (max-width: 576px) {
+  .root {
+    margin-bottom: 320px;
+    .container {
+      .row {
+        padding: 50px 20px;
+        .left {
+          .wrapperLeftContent {
+            .title {
+              font-size: 18px;
+              line-height: 20px;
+            }
+            .subtitle {
+              font-size: 32px;
+              line-height: 40px;
+            }
+            .description {
+              font-size: 18px;
+              line-height: 32px;
+            }
+          }
+        }
+
+        .right {
+          .wrapperImg {
+            img {
+            }
+          }
+        }
+        .arrowHandle {
+          .text {
+          }
+        }
+      }
+    }
+  }
+}

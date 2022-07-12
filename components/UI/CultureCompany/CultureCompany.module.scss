@@ -1,0 +1,124 @@
+.root {
+  position: relative;
+  padding: 100px 0;
+
+  .container {
+    h2 {
+      margin-bottom: 72px;
+    }
+    .row {
+      position: relative;
+
+      .card {
+        margin-left: -12px;
+        max-width: 250px;
+        @media (max-width: 576px) {
+          margin-left: -34px;
+          // max-height: 150px;
+        }
+
+        .cardBody {
+          position: relative;
+          cursor: pointer;
+          border-radius: 16px;
+          padding: 56px 24px;
+          background: #c7dcdd;
+          height: 174px;
+          border: 5px solid #c7dcdd;
+          .cardTitle {
+            font-weight: 400;
+            font-size: 20px;
+            line-height: 24px;
+          }
+          .cardIcon {
+            position: absolute;
+            right: 24px;
+            bottom: 20px;
+          }
+          @media (max-width: 576px) {
+            margin: 10px;
+            max-width: 200px;
+            height: 150px;
+          }
+        }
+        .changeColor {
+          background: #d6e2de;
+        }
+        .activeCard {
+          border: 5px solid #38cac4;
+        }
+      }
+    }
+  }
+  .container2 {
+    padding: 0 15px;
+    .content {
+      padding: 0;
+      margin-top: 100px;
+      background: #f8f8fb;
+      border-radius: 20px;
+      .header {
+        height: 72px;
+        display: flex;
+        align-items: center;
+        padding-left: 20px;
+        h2 {
+          font-weight: 600;
+          font-size: 24px;
+          line-height: 32px;
+        }
+      }
+
+      .contentImg {
+        // object-fit: cover;
+        // height: 450px;
+        width: 100%;
+      }
+      .contentBody {
+        padding: 30px;
+
+        p {
+          margin-top: 20px;
+          font-weight: 400;
+          font-size: 18px;
+          line-height: 24px;
+          color: rgba(4, 4, 21, 0.6);
+          strong {
+            color: var(--primary-color);
+          }
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: 768px) {
+  .root {
+    position: relative;
+    padding: 60px 0;
+
+    .container {
+      h2 {
+        margin-bottom: 36px;
+      }
+      .row {
+        .card {
+          .cardBody {
+            .cardTitle {
+              font-size: 16px;
+              line-height: 22px;
+            }
+          }
+        }
+      }
+    }
+    .container2 {
+      .content {
+        .description {
+          font-size: 16px;
+          line-height: 24px;
+        }
+      }
+    }
+  }
+}

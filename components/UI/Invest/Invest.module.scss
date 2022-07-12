@@ -1,0 +1,264 @@
+.root {
+  //padding-top: 10px;
+  //margin-top: 140px;
+  .figure {
+    height: 725px;
+  }
+  .container {
+    .box {
+      align-items: flex-end;
+      padding-top: 103px;
+      .leftCard {
+        .title {
+          font-weight: 600;
+          color: #000;
+          font-size: 35px;
+          line-height: 45px;
+          padding-bottom: 24px;
+          //font-family: var(--header-text);
+          text-transform: uppercase;
+        }
+        .content {
+          color: #36454c;
+          font-weight: 500 !important;
+          font-size: 18px;
+          font-weight: 400;
+          line-height: 24px;
+          padding-bottom: 48px;
+          //font-family: var(--body-text);
+        }
+        .rangeSlider {
+          width: 470px;
+          img {
+            display: none;
+          }
+          .flex {
+            display: flex;
+            justify-content: space-between;
+            .childTitle {
+              font-weight: 600;
+              line-height: 24px;
+              letter-spacing: 0.4%;
+              font-size: 18px;
+              color: rgba(36, 36, 36, 0.8);
+              //font-family: var(--body-text);
+            }
+            .childContent {
+              font-size: 18px;
+              font-weight: 700;
+              color: #22203d;
+              letter-spacing: 0.4%;
+              //font-family: var(--body-text);
+              line-height: 24px;
+            }
+          }
+        }
+        .contentSlider {
+          .text {
+            font-size: 14px;
+            line-height: 18px;
+            color: #000;
+            font-weight: 400;
+            //font-family: var(--body-text);
+            word-spacing: 2px;
+          }
+        }
+      }
+      .rightCard {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        .rangeSlider {
+          display: none;
+        }
+        .upCard {
+          background: #fafafa;
+          border: 1px solid rgba(255, 255, 255, 0.05);
+          box-sizing: border-box;
+          box-shadow: 0px 6px 30px rgba(0, 0, 0, 0.13);
+          backdrop-filter: blur(25px);
+          border-radius: 16px;
+          padding: 24px;
+          width: 80%;
+          .upCardBottom {
+            font-size: 12px;
+            line-height: 18px;
+            display: block;
+          }
+          .cardTitle {
+            font-weight: 600;
+            font-size: 18px;
+            line-height: 22px;
+            color: #000;
+            //font-family: var(--body-text);
+            margin-bottom: 20px;
+          }
+          .flexx {
+            display: flex;
+            .child {
+              display: flex;
+              align-items: center;
+              margin-bottom: 17px;
+              width: 100%;
+              .circle {
+                min-width: 20px;
+                height: 20px;
+                background-color: #01cab0;
+                border-radius: 50%;
+              }
+              .rowCard {
+                width: 100%;
+                display: flex;
+                // padding-left: 12px;
+                justify-content: space-between;
+                overflow: hidden;
+                text-overflow: ellipsis;
+                white-space: nowrap;
+                .cardContent {
+                  font-weight: 400;
+                  font-size: 14px;
+                  line-height: 17px;
+                  //font-family: var(--body-text);
+                  color: rgba(42, 42, 42, 0.8);
+                }
+                .cardPrice {
+                  color: #22203d;
+                  font-size: 16px;
+                  margin-left: 15px;
+                  margin-right: 30px;
+                  font-weight: 600;
+                  line-height: 20px;
+                  //font-family: var(--body-text);
+                }
+              }
+            }
+          }
+        }
+        .downCard {
+          // margin-top: 80px;
+          max-width: 100%;
+          width: 100%;
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: 576px) {
+  .upCard {
+    width: 100% !important;
+  }
+}
+
+@media (max-width: 800px) {
+  .root {
+    background: #fff;
+    //margin-top: 20px;
+    .container {
+      .box {
+        padding-top: 19px;
+        .rangeSlider {
+          width: 100%;
+          img {
+            width: 100%;
+          }
+          .flex {
+            display: flex;
+            justify-content: space-between;
+            padding-top: 10px;
+            .childTitle {
+              font-weight: 600;
+              line-height: 24px;
+              letter-spacing: 0.4%;
+              font-size: 18px;
+              color: rgba(36, 36, 36, 0.8);
+            }
+            .childContent {
+              font-size: 18px;
+              font-weight: 700;
+              color: #22203d;
+              letter-spacing: 0.4%;
+              line-height: 24px;
+            }
+          }
+        }
+        .leftCard {
+          .rangeSlider {
+            display: none;
+          }
+          .title {
+            font-weight: 600;
+            color: #000;
+            font-size: 28px;
+            line-height: 34px;
+            padding-bottom: 16px;
+          }
+          .content {
+            color: rgba(36, 36, 36, 0.8);
+            font-size: 18px;
+            line-height: 24px;
+            font-weight: 400;
+            padding-bottom: 0;
+            //padding-bottom: 48px;
+          }
+        }
+
+        .rightCard {
+          width: 100%;
+          .rangeSlider {
+            display: block;
+          }
+          .cardPrice {
+            font-size: 14px !important;
+          }
+          .upCard {
+            width: 60%;
+            padding: 16px;
+            margin-top: 15px;
+            .cardTitle {
+              font-size: 16px;
+              line-height: 19px;
+              margin-bottom: 10px;
+            }
+            .child {
+              margin-bottom: 10px !important;
+            }
+            .circle {
+              min-width: 12px !important;
+              height: 12px !important;
+            }
+            .cardContent,
+            .cardPrice {
+              font-size: 12px !important;
+              line-height: 22px !important;
+            }
+          }
+          img {
+            display: none;
+          }
+          .downCard {
+            width: 100%;
+            margin-top: 0;
+            overflow-x: hidden;
+
+            .responsiveChart {
+              width: 100% !important;
+              .areaChart {
+                width: 100% !important;
+              }
+            }
+            .areaChart {
+              width: 375px;
+            }
+          }
+        }
+        .row {
+          display: flex;
+          margin-bottom: 72px;
+          flex-direction: column;
+        }
+      }
+    }
+  }
+}

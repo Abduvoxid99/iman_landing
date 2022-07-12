@@ -1,0 +1,185 @@
+.wrapper {
+  .firstCol {
+    background: #01cab0;
+    padding: 25px;
+    .contentWrapper {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      h3 {
+        color: #fff;
+      }
+      .contentRight {
+        cursor: pointer;
+        display: flex;
+        align-items: center;
+        gap: 10px;
+        p {
+          font-weight: 600;
+          font-size: 18px;
+          line-height: 24px;
+          color: #ffffff;
+        }
+      }
+    }
+  }
+  .secondCol {
+    position: relative;
+    margin: 250px 0;
+    .container {
+      .row {
+        margin-top: 100px;
+        position: relative;
+        .backImg {
+          padding: 70px;
+          border-radius: 50px;
+          width: 100%;
+          height: 362px;
+          background-image: url("../../../public/images/newDesign/backFooter.svg");
+          background-position: center; /* Center the image */
+          background-repeat: no-repeat; /* Do not repeat the image */
+          background-size: cover;
+          position: relative;
+          .wrapperContent {
+            display: grid;
+            grid-template-columns: 5fr 1fr;
+            width: 100%;
+            height: 100%;
+            .leftContent {
+              display: flex;
+              flex-direction: column;
+              justify-content: space-between;
+              max-width: 770px;
+              h2 {
+                color: #fff;
+                font-weight: 600;
+                font-size: 52px;
+                line-height: 58px;
+                @media (max-width: 1200px) {
+                  font-size: 25px;
+                }
+              }
+              .wrapperBtn {
+                margin-top: 30px;
+                display: flex;
+                gap: 40px;
+                img {
+                  cursor: pointer;
+                }
+              }
+            }
+            .rightContent {
+              .mobile {
+                position: absolute;
+                right: 20px;
+                top: -130px;
+                @media (max-width: 1200px) {
+                  top: -80px;
+                  width: 300px;
+                  margin-left: 100px;
+                }
+              }
+            }
+          }
+        }
+        .left {
+          position: absolute;
+          top: -50px;
+          left: -50px;
+        }
+      }
+    }
+  }
+  .responsive {
+    display: none;
+  }
+}
+
+@media (max-width: 768px) {
+  .wrapper {
+    .firstCol {
+      .contentWrapper {
+        h3 {
+        }
+        .rightContent {
+        }
+      }
+    }
+    .secondCol {
+      display: none;
+    }
+    .responsive {
+      display: block;
+      position: relative;
+      .responsiveImg {
+        padding: 63px;
+        width: 100%;
+        height: 560px;
+        background-image: url("../../../public/images/newDesign/backFooter.svg");
+        background-position: center; /* Center the image */
+        background-repeat: no-repeat; /* Do not repeat the image */
+        background-size: cover;
+        .responsiveBody {
+          text-align: center;
+          h2 {
+            font-weight: 600;
+            font-size: 30px;
+            line-height: 34px;
+            color: #fff;
+          }
+          .responsiveBtn {
+            cursor: pointer;
+            border: none;
+            padding: 10px 20px;
+            background: #ffffff;
+            border-radius: 14px;
+            color: "#040415";
+            font-weight: 600;
+            font-size: 14px;
+            line-height: 20px;
+            margin-top: 32px;
+          }
+        }
+      }
+      .leftIcon {
+        position: absolute;
+        top: 10px;
+        left: 0px;
+      }
+      .responsiveMobile {
+        bottom: 0;
+        position: absolute;
+        left: 50%;
+        transform: translate(-50%, 0);
+      }
+    }
+  }
+}
+
+@media (max-width: 576px) {
+  .wrapper {
+    .firstCol {
+      .contentWrapper {
+        h3 {
+          font-size: 14px;
+          line-height: 24px;
+        }
+        .contentRight {
+          cursor: pointer;
+          display: flex;
+          align-items: center;
+          gap: 10px;
+          p {
+            display: none;
+          }
+        }
+      }
+    }
+    .secondCol {
+      .container {
+        .row {
+        }
+      }
+    }
+  }
+}

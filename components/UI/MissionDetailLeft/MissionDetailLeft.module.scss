@@ -1,0 +1,128 @@
+.root {
+  width: 100%;
+  padding: 143px 0 113px;
+  background: linear-gradient(139.67deg, #08dcc8 16.36%, #00cdcc 98.61%);
+  clip-path: polygon(0 13%, 100% 0, 100% 87%, 0 100%);
+
+  .topTitle {
+    //font-family: var(--heading-text);
+    font-size: 40px;
+    line-height: 49px;
+    color: #fff;
+    margin-bottom: 35px;
+    text-align: center;
+    text-transform: uppercase;
+  }
+
+  .rightBox {
+    display: flex;
+    align-items: flex-start;
+    flex-direction: column;
+    justify-content: center;
+    height: 100%;
+    // padding-left: 0px;
+    .title {
+      //font-family: var(--heading-text);
+      font-size: 40px;
+      line-height: 48px;
+      color: #fff;
+      text-transform: uppercase;
+      font-weight: 600;
+    }
+
+    .text {
+      //font-family: var(--body-text);
+      font-size: 20px;
+      line-height: 28px;
+      margin: 32px 0 34px;
+      color: #fff;
+    }
+    .allBtn {
+      display: flex;
+      align-items: center;
+      button {
+        border: 1px solid #fff;
+        &:first-child {
+          background: rgba(255, 255, 255, 0.01);
+        }
+        &:last-child {
+          margin-left: 30px;
+          &:hover {
+            background: rgba(255, 255, 255, 0.01) !important;
+          }
+        }
+      }
+    }
+  }
+  .leftBox {
+    img {
+      width: 100%;
+      height: auto;
+    }
+  }
+}
+
+.background {
+  background: #f8f8f8;
+}
+@media (max-width: 576px) {
+  .root {
+    padding: 50px 0 208px !important;
+    clip-path: polygon(0 3%, 100% 0, 100% 97%, 0 100%) !important;
+    position: relative;
+    .gridRow {
+      flex-direction: column-reverse;
+    }
+
+    .rightBox {
+      .title {
+        font-size: 24px;
+        line-height: 30px;
+      }
+
+      .text {
+        font-size: 18px;
+        line-height: 24px;
+        margin: 12px 0 0;
+      }
+      .allBtn {
+        flex-direction: column;
+        width: 100%;
+        padding: 0 58px;
+        position: absolute;
+        bottom: 64px;
+        left: 0;
+        button {
+          &:last-child {
+            margin-left: 0;
+            margin-top: 16px;
+          }
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: 800px) {
+  .root {
+    padding: 50px 0 90px;
+    clip-path: polygon(0 10%, 100% 0, 100% 90%, 0 100%);
+
+    .rightBox {
+      padding-left: 0;
+      .title {
+        font-size: 24px;
+        line-height: 30px;
+      }
+
+      .text {
+        font-size: 18px;
+        line-height: 24px;
+        margin: 12px 0 0;
+      }
+      .allBtn {
+        margin-top: 40px;
+      }
+    }
+  }
+}

@@ -1,0 +1,254 @@
+.root {
+  padding-bottom: 56px;
+  position: relative;
+  overflow: hidden;
+  .figure {
+    height: 751px;
+  }
+  .container {
+    .row {
+      display: flex;
+      // justify-content: center;
+      align-items: center;
+      transform: rotate(0) !important;
+
+      .leftCard {
+        width: 60%;
+        br {
+          display: none;
+        }
+
+        .title {
+          font-weight: 700;
+          font-size: 64px;
+          line-height: 67px;
+          color: #000;
+          margin-bottom: 24px;
+          //font-family: var(--header-text);
+          text-transform: uppercase;
+        }
+        .content {
+          font-size: 22px;
+          line-height: 32px;
+          //font-family: var(--body-text);
+          font-weight: 400;
+          width: 600px;
+          color: #000;
+          margin: 0;
+          display: flex;
+          align-items: center;
+          .bannerText {
+            position: relative;
+            // right: 4px;
+          }
+          .bannerThird {
+            position: relative;
+            // right: 2px;
+          }
+          .shapeSquare {
+            display: inline-block;
+            //transform: rotate(45deg);
+            //margin-top: 5px;
+            position: relative;
+            color: #000;
+            //top: 5px;
+            margin-right: 12px;
+            font-size: 12px;
+          }
+          br {
+            display: block;
+          }
+        }
+      }
+      .rightCard {
+        width: 40%;
+        margin-top: 45px;
+        .child {
+          background-image: url('../../../public//images//banner.png');
+          background-repeat: no-repeat;
+          width: 625px;
+          height: 630px;
+          padding-left: 250px;
+          z-index: 1;
+          padding-top: 150px;
+          position: relative;
+          margin-bottom: 20px;
+
+          .imanVideo {
+            border-radius: 26px;
+            position: absolute;
+            object-fit: fill;
+            height: 510px;
+            width: 236px;
+            left: 141px;
+            top: 31px;
+            z-index: 2;
+            &:focus {
+              outline: none;
+            }
+          }
+        }
+      }
+
+      .allBtn {
+        display: flex;
+        align-items: center;
+        margin-top: 26px;
+        button {
+          &:last-child {
+            margin-left: 30px;
+          }
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: 576px) {
+  .root {
+    padding-bottom: 0;
+    .container {
+      .row {
+        flex-direction: column;
+        padding-top: 40px;
+        .leftCard {
+          width: 100%;
+          .title {
+            font-size: 35px;
+            line-height: 43px;
+            // margin-top: 20px;
+            text-align: left;
+            color: #000;
+            margin-bottom: 16px;
+          }
+          .content {
+            width: 100%;
+            font-size: 18px;
+            line-height: 24px;
+            padding-left: 40px;
+            display: flex;
+            margin-bottom: 8px;
+            .shapeSquare {
+              display: inline-block;
+              transform: rotate(45deg);
+              position: absolute;
+              left: 0;
+              top: auto;
+            }
+            br {
+              display: block;
+            }
+          }
+        }
+        .rightCard {
+          width: 100%;
+          margin-top: 24px;
+          .child {
+            background-image: url('../../../public/images/mobile_banner.png');
+            background-repeat: no-repeat;
+            width: 100%;
+            height: 500px;
+            padding-left: 372px;
+            padding-top: 150px;
+            position: relative;
+            margin-bottom: 0;
+            .imanVideo {
+              border-radius: 26px !important;
+              position: absolute !important;
+              object-fit: fill !important;
+              height: 387px !important;
+              width: 182px !important;
+              left: 104px !important;
+              top: 23px !important;
+            }
+          }
+        }
+        .allBtn {
+          display: flex;
+          align-items: center;
+          margin-top: 32px;
+          justify-content: space-between;
+
+          button {
+            margin-left: 0 !important;
+            width: 48%;
+          }
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: 800px) {
+  .root {
+    padding-bottom: 0;
+    .container {
+      .row {
+        // flex-direction: column;
+        padding-top: 40px;
+        .leftCard {
+          .title {
+            font-size: 35px;
+            line-height: 43px;
+            // margin-top: 20px;
+            text-align: left;
+            color: #000;
+            margin-bottom: 16px;
+          }
+          .content {
+            width: 100%;
+            font-size: 18px;
+            line-height: 24px;
+            padding-left: 40px;
+            display: flex;
+            margin-bottom: 8px;
+            .shapeSquare {
+              display: inline-block;
+              transform: rotate(45deg);
+              position: absolute;
+              left: 0;
+              top: auto;
+              margin-top: 0;
+            }
+            br {
+              display: block;
+            }
+          }
+        }
+        .rightCard {
+          margin-top: 0;
+
+          .child {
+            background-image: url('../../../public/images/mobile_banner.png');
+            background-repeat: no-repeat;
+            width: 100%;
+            height: 500px;
+            padding-left: 372px;
+            padding-top: 150px;
+            position: relative;
+            margin-bottom: 0;
+            .imanVideo {
+              border-radius: 26px;
+              position: absolute;
+              object-fit: fill;
+              height: 387px;
+              width: 182px;
+              left: 105px;
+              top: 21px;
+            }
+          }
+        }
+        .allBtn {
+          display: flex;
+          align-items: center;
+          margin: 32px 0 24px;
+          justify-content: space-between;
+
+          button {
+            margin-left: 0 !important;
+          }
+        }
+      }
+    }
+  }
+}

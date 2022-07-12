@@ -1,0 +1,96 @@
+.leftBlog {
+  clip-path: polygon(0 0, 100% 0, 100% 90%, 0 100%);
+  background: linear-gradient(139.67deg, #08dcc8 16.36%, #00cdcc 98.61%);
+  padding: 47px 0 100px;
+  p,
+  h2,
+  h1 {
+    color: #fff !important;
+  }
+}
+.lineBlog {
+  clip-path: polygon(0 8%, 100% 0, 100% 92%, 0 100%);
+  padding: 60px 0;
+}
+.blog {
+  padding: 24px 0;
+}
+.footerBg {
+  background-color: #f8f8f8;
+}
+.box {
+  padding: 40px 0;
+  .positionLeft {
+    flex-direction: row-reverse;
+  }
+  .rightBox {
+    h1 {
+      font-size: 40px;
+      line-height: 32px;
+      margin-bottom: 20px;
+      text-transform: initial;
+      height: 32px;
+    }
+    h2 {
+      font-size: 38px;
+      line-height: 42px;
+      font-weight: 600;
+      margin-bottom: 20px;
+    }
+    p {
+      font-size: 24px;
+      line-height: 32px;
+      color: rgba(0, 0, 0, 0.8);
+      &:last-child {
+        margin-top: 20px;
+      }
+    }
+  }
+  .leftBox {
+    height: 100%;
+    padding-top: 60px;
+    img {
+      width: 100%;
+      border-radius: 16px;
+    }
+  }
+}
+
+@media (max-width: 800px) {
+  .leftBlog {
+    clip-path: polygon(0 0, 100% 0, 100% 97%, 0 100%);
+  }
+  .firstBlog {
+    flex-direction: column-reverse;
+  }
+  .lineBlog {
+    clip-path: polygon(0 2%, 100% 0, 100% 98%, 0 100%);
+  }
+  .box {
+    padding: 0;
+
+    .rightBox {
+      h1 {
+        font-size: 24px;
+        line-height: 30px;
+        margin-bottom: 12px;
+        height: auto;
+      }
+      h2 {
+        font-size: 24px;
+        line-height: 30px;
+        margin-bottom: 12px;
+      }
+      p {
+        &:first-child {
+          margin-top: 0 !important;
+        }
+        font-size: 18px;
+        line-height: 24px;
+      }
+    }
+    .leftBox {
+      padding-top: 0;
+    }
+  }
+}

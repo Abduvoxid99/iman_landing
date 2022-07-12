@@ -1,0 +1,327 @@
+.root {
+  width: 100%;
+  background: rgb(248, 248, 248);
+  .image {
+    position: relative;
+    height: 532px;
+    img {
+      position: absolute;
+      top: 0;
+      left: 0;
+      height: 100%;
+      width: 100%;
+      object-fit: cover;
+    }
+  }
+  .box {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 532px;
+    .title {
+      font-size: 32px;
+      line-height: 50px;
+      text-align: left;
+      color: #fff;
+      z-index: 2;
+      font-weight: 400;
+      //font-family: var(--body-text);
+    }
+    .bg {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      object-fit: cover;
+      height: 60vh;
+    }
+  }
+  .row {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    // clip-path: polygon(0 0, 100% 0, 100% 91%, 0 100%);
+    // background: linear-gradient(139.67deg, #08dcc8 16.36%, #00cdcc 98.61%);
+    // padding: 1px 0;
+    padding-bottom: 0;
+    margin-bottom: 20px;
+    margin-top: 30px;
+
+    .video {
+      margin: 50px 0 100px 0;
+      display: flex;
+      align-items: center;
+      flex-direction: column;
+      text-align: center;
+
+      @media (max-width: 740px) {
+        margin: 0px 0 60px 0;
+      }
+  
+      .videoWrapper {
+        margin-top: 30px;
+        width: 600px;
+        height: 330px;
+
+        @media (max-width: 740px) {
+          width: 100%;
+        }
+      }
+    }
+  
+    .titleVideo {
+      font-size: 22px;
+      font-weight: 500;
+      line-height: 24px;
+      display: flex;
+      justify-content: center;
+
+      @media (max-width: 540px) {
+        font-size: 18px;
+      }
+    }
+  
+    .imgPdf {
+      margin-left: 15px;  
+      img {
+        width: 80px;
+      }
+    }
+
+    .text {
+      display: flex;
+      flex-direction: column;
+      //width: 500px;
+      // margin-right: 100px;
+      .titleContent {
+        font-size: 40px;
+        // color: #fff;
+        color: rgba(0, 0, 0, 0.87);
+        line-height: 48px;
+        font-weight: 600;
+
+        //font-family: var(--heading-text);
+      }
+      .contentBio {
+        font-size: 20px;
+        line-height: 26px;
+        letter-spacing: 0.004em;
+        // color: #fff;
+        color: #7a7a7a;
+        padding-top: 10px;
+        //font-family: var(--body-text);
+      }
+      .content {
+        font-size: 20px;
+        line-height: 26px;
+        letter-spacing: 0.004em;
+        //font-family: var(--body-text);
+        padding-top: 24px;
+        // color: #fff;
+        color: #000;
+      }
+      .info {
+        font-size: 20px;
+        line-height: 26px;
+        // color: #fff;
+        color: #000;
+        margin-top: 16px;
+      }
+    }
+    img {
+      border-radius: 12px;
+      height: auto;
+      width: 100%;
+    }
+  }
+  .position {
+    flex-direction: row-reverse;
+    background: #f8f8f8;
+    padding: 58px 0 42px;
+    .text {
+      padding-right: 0;
+      padding-left: 80px;
+      // width: 550px;
+
+      .titleContent {
+        white-space: nowrap;
+        overflow: hidden;
+        text-overflow: clip;
+        //font-family: var(--heading-text);
+        color: #000;
+      }
+      .contentBio,
+      .content,
+      .info {
+        color: #000;
+      }
+    }
+  }
+  .certificate {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background: linear-gradient(139.67deg, #08dcc8 16.36%, #00cdcc 98.61%);
+    clip-path: polygon(0 10%, 100% 0, 100% 90%, 0 100%);
+    padding: 146px 0;
+    .childTitle {
+      font-size: 48px;
+      line-height: 58px;
+      color: #fff;
+      font-weight: 600;
+      //font-family: var(--heading-text);
+    }
+    .childContent {
+      padding-top: 12px;
+      font-size: 20px;
+      line-height: 28px;
+      color: #fff;
+      font-weight: 400;
+      text-align: center;
+      //font-family: var(--body-text);
+      padding-bottom: 56px;
+    }
+    .certificateContent {
+      display: flex;
+      align-items: center;
+      flex-direction: column;
+    }
+  }
+}
+
+.fatwaSection {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  .fatwa {
+    width: 80%;
+  }
+  .fatwaImg {
+    width: 80%;
+    transition: transform 1.3s;
+  }
+  .fatwaImg:hover {
+    transform: scale(1.6) translateX(60px);
+  }
+  .fatwaImg2 {
+    width: 60%;
+    transition: transform 1.3s;
+    float: right;
+  }
+  .fatwaImg2:hover {
+    transform: scale(1.4) translate(-70px, -40px);
+  }
+}
+
+.fatwaRes {
+  display: none;
+}
+@media (max-width: 576px) {
+  .root {
+    .image {
+      height: 578px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      .box {
+        .title {
+          font-size: 28px;
+          line-height: 42px;
+        }
+      }
+    }
+    .position {
+      padding: 30px 0 !important;
+      .lastBox {
+        flex-direction: column-reverse;
+      }
+    }
+    .certificate {
+      clip-path: polygon(0 3%, 100% 0, 100% 97%, 0 100%);
+      padding: 44px 0 65px;
+      .certificateContent {
+        .fatwaSection{
+            display: flex;
+            flex-direction: column;
+            text-align: center;
+              .fatwa {
+                width: 100%;
+                .fatwaImg2:hover, .fatwaImg:hover {
+                  transform: scale(1.05);
+                }
+                .fatwaImg2 {
+                  float: none;
+                  padding: 0;
+                }
+                .fatwaImg {
+                  padding: 0;
+                }
+            }
+        }
+        .fatwaRes {
+          width: 100%;
+        }
+        .fatwaRes {
+          display: block;
+        }
+      }
+    }
+    .row {
+      padding: 32px 0 90px;
+      clip-path: polygon(0 0, 100% 0, 100% 98%, 0 100%);
+
+      img {
+        width: 100%;
+        height: auto;
+      }
+    }
+  }
+}
+
+@media (max-width: 800px) {
+  .root {
+    .image {
+      .box {
+        .title {
+          font-size: 28px;
+          line-height: 42px;
+        }
+      }
+    }
+    .row {
+      padding: 50px 0;
+      .text {
+        width: 100%;
+        padding: 0 !important;
+        .titleContent {
+          font-size: 28px;
+          line-height: 34px;
+        }
+        .contentBio {
+          font-size: 16px;
+          line-height: 19px;
+          padding-top: 8px;
+        }
+        .content {
+          font-size: 18px;
+          line-height: 24px;
+          padding-top: 16px;
+        }
+      }
+    }
+    .certificate {
+      padding: 100px 0;
+      .childTitle {
+        font-size: 32px;
+        line-height: 39px;
+        text-align: center;
+      }
+      .childContent {
+        font-size: 18px;
+        line-height: 28px;
+        padding: 8px 0 32px;
+      }
+    }
+  }
+}

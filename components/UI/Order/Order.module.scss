@@ -1,0 +1,188 @@
+.body {
+  padding: 100px 0 53px;
+
+  .container {
+    position: relative;
+    .row {
+      display: flex !important;
+      justify-content: center;
+      margin-bottom: 50px;
+
+      .title {
+        font-size: 40px;
+        font-weight: 600;
+        line-height: 50px;
+        align-items: center;
+        color: #000;
+        //font-family: var(--header-text);
+        text-transform: uppercase;
+        br {
+          display: none;
+        }
+      }
+    }
+    .rowSecond {
+      display: flex;
+      justify-content: center;
+      //border-radius: 16px;
+      .img {
+        height: 200px;
+        img {
+          width: 100%;
+          border-radius: 16px;
+          object-fit: cover;
+        }
+      }
+      padding: 0 10px;
+      .cardRow {
+        display: flex;
+        flex-direction: column;
+        padding: 12px;
+        //background: #f5f5f5;
+        //height: 100%;
+        .contentTitle {
+          font-weight: 600;
+          font-size: 24px;
+          line-height: 29px;
+          text-transform: uppercase;
+          //font-family: var(--body-text);
+        }
+        .content {
+          padding-top: 12px;
+          font-size: 18px;
+          font-weight: 500;
+          line-height: 25px;
+          //font-family: var(--body-text);
+          overflow: hidden;
+          text-overflow: ellipsis;
+          display: -webkit-box;
+          -webkit-line-clamp: 5;
+          -webkit-box-orient: vertical;
+          height: 135px;
+        }
+      }
+    }
+    .button {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      .btn {
+        border-radius: 4px;
+        border: 1.4px solid #01cab0;
+        color: #01cab0;
+        text-transform: initial;
+        font-size: 18px;
+        line-height: 22px;
+        font-weight: 600;
+        padding: 12px 65px;
+        //font-family: var(--body-text);
+        margin-top: 32px;
+        &:hover {
+          color: #fff;
+          background-color: #01cab0;
+          border-color: #01cab0;
+        }
+      }
+    }
+    .backArrow {
+      position: absolute;
+      left: 0px;
+      top: 56%;
+      color: #00cbb1;
+      cursor: pointer;
+      z-index: 0.1;
+      font-size: 35px;
+    }
+    .nextArrow {
+      position: absolute;
+      top: 56%;
+      cursor: pointer;
+      right: -15px;
+      color: #00cbb1;
+      font-size: 35px;
+    }
+  }
+}
+.MuiButtonBase-root .MuiCardActionArea-root {
+  height: 100%;
+}
+
+@media (max-width: 576px) {
+  .rowSecond {
+    padding: 0 !important;
+  }
+}
+@media (max-width: 800px) {
+  .body {
+    // margin-top: 20px;
+    padding-top: 0;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-content: center;
+    .container {
+      .row {
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        padding-top: 32px;
+        .title {
+          font-size: 28px;
+          text-align: center;
+          font-weight: 600;
+          line-height: 34px;
+          align-items: center;
+          color: #000;
+          br {
+            display: block;
+          }
+        }
+      }
+      .rowSecond {
+        flex-direction: column;
+
+        .cardRow {
+          display: flex;
+          flex-direction: column;
+          padding: 24px 16px;
+          //background: #f5f5f5;
+          height: 100%;
+          .contentTitle {
+            font-weight: 600;
+            font-size: 24px;
+            line-height: 29px;
+          }
+          .content {
+            padding-top: 12px;
+            font-size: 16px;
+            font-weight: 400;
+            line-height: 25px;
+          }
+        }
+        .button {
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          .btn {
+            border-radius: 4px;
+            border: 1.4px solid #01cab0;
+            color: #01cab0;
+            text-transform: initial;
+            font-size: 14px;
+            line-height: 22px;
+            font-weight: 500;
+            padding: 12px 65px;
+            margin-top: 0;
+          }
+        }
+      }
+    }
+    .backArrow {
+      display: none;
+    }
+    .nextArrow {
+      display: none;
+    }
+  }
+}

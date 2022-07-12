@@ -1,0 +1,171 @@
+.root {
+  position: relative;
+  margin-top: 50px;
+  .container {
+    .row {
+      position: relative;
+      .col {
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+        margin-top: 100px;
+        gap: 30px;
+        .left {
+          display: flex;
+          flex-direction: column;
+          justify-content: center;
+          height: 490px;
+          width: 50%;
+          h2 {
+            font-weight: 700;
+            font-size: 90px;
+            line-height: 116px;
+          }
+
+          .title {
+            font-weight: 700;
+            font-size: 56px;
+            line-height: 60px;
+          }
+        }
+
+        .rightFirst {
+          display: flex;
+          flex-direction: column;
+          align-items: center;
+          justify-content: space-evenly;
+          width: 510px;
+          height: 490px;
+          background: linear-gradient(227.67deg, #ded9ff -16.22%, #dcfff9 100%),
+            linear-gradient(0deg, #f2f2f8, #f2f2f8),
+            linear-gradient(0deg, rgba(4, 4, 21, 0.03), rgba(4, 4, 21, 0.03)),
+            rgba(4, 4, 21, 0.03);
+          border-radius: 50px;
+          .brands {
+            display: flex;
+            gap: 10px;
+          }
+          .qrMobile {
+            display: none;
+          }
+          p {
+            font-weight: 500;
+            font-size: 18px;
+            line-height: 24px;
+          }
+        }
+        .rightSecond {
+          overflow: hidden;
+          background: linear-gradient(0deg, #f2f2f8, #f2f2f8),
+            rgba(4, 4, 21, 0.03);
+          border-radius: 50px;
+          width: 510px;
+          height: 490px;
+          .colSecond {
+            display: flex;
+            margin-top: 25px;
+            .card {
+              margin-left: 30px;
+              display: flex;
+              align-items: center;
+              padding: 15px 26px;
+              gap: 10px;
+              height: 60px;
+              background: rgba(255, 255, 255, 0.5);
+              border-radius: 42px;
+              .marqueTitle {
+                font-weight: 600;
+                font-size: 18px;
+                line-height: 24px;
+              }
+            }
+          }
+        }
+        .rightThird {
+          overflow: hidden;
+          width: 510px;
+          height: 490px;
+          background: linear-gradient(227.67deg, #ded9ff -16.22%, #dcfff9 100%),
+            linear-gradient(0deg, #f2f2f8, #f2f2f8),
+            linear-gradient(0deg, rgba(4, 4, 21, 0.03), rgba(4, 4, 21, 0.03)),
+            rgba(4, 4, 21, 0.03);
+          border-radius: 50px;
+          position: relative;
+          .image {
+            position: absolute;
+            bottom: 0;
+            left: 50%;
+            transform: translate(-50%, 0);
+          }
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: 768px) {
+  .root {
+    .container {
+      .row {
+        .col {
+          flex-direction: column;
+          align-items: center;
+          .left {
+            width: 100%;
+            height: 150px;
+            h2 {
+              font-size: 34px;
+              line-height: 38px;
+            }
+
+            .title {
+              font-weight: 600;
+              font-size: 30px;
+              line-height: 34px;
+            }
+          }
+
+          .rightFirst {
+            width: 335px;
+            height: 335px;
+            .brands {
+            }
+            .qrDesktop {
+              display: none;
+            }
+            .qrMobile {
+              display: block;
+            }
+            p {
+              display: none;
+            }
+          }
+          .rightSecond {
+            width: 335px;
+            height: 335px;
+            .colSecond {
+              .card {
+                height: 42px;
+                .marqueImg {
+                  width: 20px;
+                }
+                .marqueTitle {
+                  font-weight: 600;
+                  font-size: 14px;
+                  line-height: 22px;
+                }
+              }
+            }
+          }
+          .rightThird {
+            width: 335px;
+            height: 335px;
+            .image {
+              width: 282px;
+            }
+          }
+        }
+      }
+    }
+  }
+}

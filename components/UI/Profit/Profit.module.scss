@@ -1,0 +1,52 @@
+.root {
+  width: 100%;
+  position: relative;
+  padding: 107px 0 187px;
+  background: linear-gradient(139.67deg, #08dcc8 16.36%, #00cdcc 98.61%);
+  clip-path: polygon(0 0, 100% 0, 100% 90%, 0 100%);
+  .count {
+    padding: 22px;
+    background: rgba(255, 255, 255, 0.5);
+    box-shadow: 0px 10px 40px rgba(0, 0, 0, 0.05);
+    backdrop-filter: blur(50px);
+    height: 100%;
+    border-radius: 16px;
+    svg,
+    .countTitle,
+    .content {
+      color: #fff;
+    }
+    svg {
+      margin-bottom: 32px;
+      font-size: 48px;
+    }
+    .countTitle {
+      font-size: 24px;
+      line-height: 29px;
+      font-weight: 500;
+      margin-bottom: 12px;
+      text-transform: uppercase;
+      font-family: var(--headen-text);
+      font-weight: 600;
+    }
+    .content {
+      font-size: 17px;
+      line-height: 24px;
+      font-weight: 500;
+      //font-family: var(--body-text);
+    }
+  }
+}
+@media (max-width: 576px) {
+  .root {
+    width: 100%;
+    position: relative;
+    padding: 32px 0 54px;
+    clip-path: polygon(0 0, 100% 0, 100% 97%, 0 100%);
+    .count {
+      display: flex;
+      align-items: center;
+      flex-direction: column;
+    }
+  }
+}
